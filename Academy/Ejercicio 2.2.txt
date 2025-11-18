@@ -1,0 +1,13 @@
+Ejercicio 2.1: Pruebas de Validación de Número de Cuenta 
+
+Descripción: 
+Probar una función que valida si un número de cuenta contiene exactamente 10 dígitos. 
+
+Objetivo: 
+Evaluar la habilidad del tester para identificar condiciones de validación y errores. 
+
+Actividades esperadas: 
+
+Generar un conjunto de casos de prueba con distintos formatos de entrada. 
+Identificar valores válidos, inválidos y bordes. 
+Indicar resultado esperado y prioridad de prueba. 

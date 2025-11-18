@@ -1,0 +1,12 @@
+Ejercicio 4.1: Pruebas de Registro de Transacciones 
+
+Descripción: 
+Automatizar la validación de totales de depósitos y retiros. 
+
+Objetivo: 
+Evaluar conocimiento de frameworks de automatización (p. ej. JUnit o TestNG) y buenas prácticas de scripting. 
+
+Actividades esperadas: 
+
+Crear un script que valide los totales calculados. 
+Usar aserciones automáticas. 

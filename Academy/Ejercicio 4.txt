@@ -1,5 +1,5 @@
 Ejercicio 4: Registro de Transacciones 
 
 Descripción: 
-Implementa una clase Transaccion (tipo, monto, fecha). 
-Crea un método que calcule el total de depósitos y retiros. 
+  -Implementa una clase Transaccion (tipo, monto, fecha). 
+  -Crea un método que calcule el total de depósitos y retiros. 

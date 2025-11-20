@@ -1,0 +1,39 @@
+Caso 1: Depósito válido
+Entrada: Depósito = 500.00
+Resultado: El saldo aumenta correctamente (1000.00 → 1500.00)
+(Validar que no se muestre error y aparezca el mensaje "Depósito realizado")
+
+Caso 2: Depósito inválido
+Entrada: Depósito = -200
+Resultado: Muestra error "Debe ser positivo"
+(Verificar que el saldo no cambie)
+
+Caso 3: Depósito con formato incorrecto
+Entrada: Depósito = "abc"
+Resultado: Muestra error "Entrada no válida"
+(Validar que no intente convertir el texto a BigDecimal)
+
+Caso 4: Retiro válido
+Entrada: Retiro = 300
+Resultado: El saldo disminuye correctamente (1000.00 → 700.00)
+(Confirmar mensaje "Retiro realizado")
+
+Caso 5: Retiro mayor al saldo
+Entrada: Retiro = 2000
+Resultado: Error "Saldo insuficiente"
+(Validar que el saldo permanezca sin cambios)
+
+Caso 6: Retiro inválido
+Entrada: Retiro = -100
+Resultado: Error "Debe ser positivo"
+(Validar que no se descuente nada)
+
+Caso 7: Consulta de saldo
+Entrada: Clic en "Consultar saldo"
+Resultado: Muestra ventana emergente con el saldo formateado en euros
+(Validar que coincida con balanceLabel)
+
+Caso 8: Entrada cancelada
+Entrada: Usuario presiona "Cancelar" en retiro/deposito
+Resultado: No se realiza ninguna operación
+(Validar que el saldo no se modifique)

@@ -1,0 +1,25 @@
+Caso 1: Basico
+Cuenta:1234567890
+Resultado: El numero de cuenta es valido
+(Evaluar el numero de dígitos)
+
+
+Caso 2: Aflanumericos
+Cuenta: 
+Resultado:
+(En este caso solo se permite introducir caracteres numéricos)
+
+Caso 1: Borde
+Cuenta: 0001234567
+Resultado: El numero de cuenta es valido
+
+
+Caso 1: Limite Inferior
+Cuenta: 123456789
+Resultado: Numero de cuenta invalido, debe tener exactamente 10 dígitos numericos
+
+
+Caso 1: Limite Superior
+Cuenta:1234567890
+Resultado:
+(En este caso no se permiten introducir mas de 10 dígitos)

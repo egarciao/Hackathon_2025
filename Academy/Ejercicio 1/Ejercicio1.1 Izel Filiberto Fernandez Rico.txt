@@ -1,0 +1,27 @@
+Caso de prueba 1
+Entrada:
+Monto: 10000
+Años: 3
+Tasa de Interes: 12
+Resultado esperado:
+13,600
+Resultado obtenido:
+13600.0
+
+Caso de prueba 2
+Entrada:
+Monto: cien
+Resultado esperado:
+Mensaje de error "Tipo de dato incorrecto"
+Resultado obtenido:
+Mensaje de error "Tipo de dato incorrecto"
+
+Caso de prueba 3
+Entrada:
+Monto: 0.2
+Años: 0.5
+Tasa de Interes: 300
+Resultado esperado:
+Mensaje de error "El monto final no es valido"
+Resultado obtenido:
+Mensaje de error "El monto final no es valido"

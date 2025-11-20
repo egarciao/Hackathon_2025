@@ -120,7 +120,8 @@ class ATMFrame extends JFrame {
 
 class ATMApp {
     public static void main(String[] args) {
-        Account initial = new Account(new BigDecimal("1000.00")); // saldo inicial de ejemplo
+        Account initial = new Account(new BigDecimal("1000.00"));
         SwingUtilities.invokeLater(() -> new ATMFrame(initial));
     }
+
 }

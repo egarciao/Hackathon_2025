@@ -1,0 +1,14 @@
+Caso 1: Listado básico
+Entrada: Lista con 6 clientes (Ana, Luis, María, Carlos, Elena, Diego)
+Resultado: Se listan correctamente todos los clientes en formato tabular
+(Validar que cada cliente aparezca con ID, nombre y saldo)
+
+Caso 2: Mayor saldo
+Entrada: Saldos: 1500.50, 5400.00, 3250.75, 4100.00, 2750.20, 6200.40
+Resultado: El cliente con mayor saldo es Diego (6200.40)
+(Verificar que aparezca marcado como "<== Mayor saldo")
+
+Caso 3: Lista vacía
+Entrada: Lista sin clientes
+Resultado: Muestra mensaje "La lista está vacía."
+(Validar manejo correcto de estructuras vacías)

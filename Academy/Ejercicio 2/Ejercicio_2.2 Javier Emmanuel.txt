@@ -1,0 +1,32 @@
+Tabla casos
+Casos de Prueba
+Valores válidos.
+Datos de entrada: 1234567890
+Resultado esperado: Validado
+Resultado: Validado
+Prueba pasada
+
+Tabla casos 2
+Casos de Prueba
+Valores inválidos.
+Datos de entrada: p12ljlkjgh
+Resultado esperado: Error Dato incorrecto: Ingresa numeros.
+Resultado: Error Dato incorrecto: Ingresa numeros.
+Prueba pasada
+
+
+Tabla casos 3
+Casos de Prueba
+Valores inválidos.
+Datos de entrada: 123456789
+Resultado esperado: Error: La cuenta no tiene los 10 digitos necesarios volver a ingresar.
+Resultado: Error: La cuenta no tiene los 10 digitos necesarios volver a ingresar.
+Prueba pasada
+
+Tabla casos 4
+Casos de Prueba
+Valores inválidos.
+Datos de entrada: 12345678901
+Resultado esperado: Error: La cuenta no tiene los 10 digitos necesarios volver a ingresar.
+Resultado: Error: La cuenta no tiene los 10 digitos necesarios volver a ingresar.
+Prueba pasada

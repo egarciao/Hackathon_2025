@@ -3,7 +3,11 @@
 **Ejercicio 3.3 – Tester: Citlaly Lizeth Cruz Gómez**
 
 # Objetivos: 
-    - 
+    - Validar que el sistema de gestión de clientes bancarios responda correctamente a las operaciones principales: consultar saldo, depositar y retirar.
+    - Comprobar que el sistema maneje adecuadamente las entradas inválidas.
+    - Verificar que el sistema impida operaciones no válidas, como retiros mayores al saldo disponible.
+    - Confirmar que el sistema muestre mensajes claros y correctos ante cada tipo de operación.
+    - Asegurar que el comportamiento del sistema coincida con los resultados esperados en todos los casos de prueba definidos.
 
 # Casos de prueba:
 El case para este caso de prueba es el siguiente:

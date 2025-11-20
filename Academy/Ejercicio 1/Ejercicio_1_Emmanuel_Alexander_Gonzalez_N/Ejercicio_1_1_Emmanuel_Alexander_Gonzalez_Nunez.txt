@@ -1,0 +1,33 @@
+Tabla test cases
+Casos de Prueba
+Caso 1: Flujo Normal
+Datos de entrada
+M:1000
+T:10
+A:2
+Calculo esperado y salida esperada: Interes: 200 Final: 1200
+PASS
+
+Caso 2: Decimales
+Datos de entrada
+M:2500.50
+T:5.5
+A:4
+Calculo esperado y salida esperada: Interes: 550.11 Final: 3050.61
+PASS
+
+Caso 3: Tasa Cero
+Datos de entrada
+M:5000
+T:0
+A:5
+Calculo esperado y salida esperada: Interes: 0 Final: 5000
+PASS
+
+Caso 4: Tiempo Mínimo (1 año)
+Datos de entrada
+M:100
+T:50
+A:1
+Calculo esperado y salida esperada: Interes: 50 Final: 150
+PASS

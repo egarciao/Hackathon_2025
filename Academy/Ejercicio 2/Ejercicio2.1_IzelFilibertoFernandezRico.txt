@@ -1,0 +1,22 @@
+Caso de prueba 1
+Entrada:
+Cuenta bancaria: 1234567890
+Resultado esperado:
+Verificacion exitosa
+Resultado obtenido:
+Verificacion exitosa
+
+Caso de prueba 2
+Entrada:
+Cuenta bancaria:as
+Resultado esperado:
+Mensaje de error "Ingresaste una cuenta bancaria incorrecta"
+Resultado obtenido:
+Mensaje de error "Ingresaste una cuenta bancaria incorrecta"
+
+Caso de prueba 3
+Cuenta bancaria: 12
+Resultado esperado:
+Mensaje de error "Tu cuenta bancaria no era de la longitud correcta, su longitud es: 2"
+Resultado obtenido:
+Mensaje de error "Tu cuenta bancaria no era de la longitud correcta, su longitud es: 2"

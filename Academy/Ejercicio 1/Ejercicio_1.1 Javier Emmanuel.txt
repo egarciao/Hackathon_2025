@@ -1,0 +1,27 @@
+Tabla casos
+Caso de Prueba
+Datos de entrada
+monto inicial:10
+tasa de interés anual:2
+años:2
+Calculo esperado:10.4
+Salida esperada: 10.4
+
+Tabla casos 2
+Caso de Prueba
+Datos de entrada
+monto inicial:w
+tasa de interés anual:5
+años:5
+Calculo esperado: dato incorrecto
+Salida esperada: dato incorrecto
+
+
+Tabla casos 3
+Caso de Prueba
+Datos de entrada
+monto inicial:1000
+tasa de interés anual:10
+años:1
+Calculo esperado: 1100
+Salida esperada: 1100

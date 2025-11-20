@@ -1,0 +1,28 @@
+Test Cases
+Caso 1: Cuenta Estándar (Happy Path)
+Datos de entrada
+Cuenta: "1234567890"
+Resultado esperado: Válida
+Tipo de prueba: Válido
+
+Caso 2:
+Cuenta con ceros a la izquierda (Borde Crítico)
+Datos de entrada Cuenta: "0012345678"
+Resultado esperado: Válida (True)
+Tipo de prueba: Válido (Verifica que no se trate como número entero)
+
+Caso 3: Límite Inferior (9 dígitos)
+Datos de entrada Cuenta: "123456789"
+Resultado esperado: Inválida (Error: Longitud incorrecta)
+Tipo de prueba: Borde / Inválido
+
+Caso 4: Límite Superior (11 dígitos)
+Datos de entrada Cuenta: "12345678901"
+Resultado esperado:
+Inválida (Error: Longitud incorrecta)
+Tipo de prueba: Borde / Inválido
+
+Caso 5: Caracteres Alfanuméricos Datos de entrada
+Cuenta: "12345ABCDE"
+Resultado esperado: Inválida (Error: Contiene caracteres no numéricos)
+Tipo de prueba: Formato Inválido

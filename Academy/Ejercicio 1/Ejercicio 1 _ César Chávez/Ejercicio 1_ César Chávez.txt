@@ -1,0 +1,6 @@
+Ejercicio 1: Cálculo de Interés Simple
+Descripción:
+Implementa un programa que calcule el interés simple de una cuenta bancaria.
+Requerimientos:
+•	El programa debe solicitar: monto inicial, tasa de interés anual (%), y número de años.
+•	Debe imprimir el interés total y el monto final.

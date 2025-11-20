@@ -1,0 +1,24 @@
+Caso 1: Cálculo de promedio
+Entrada: Salarios = 15000, 22000, 18000, 25000
+Resultado: El promedio debe ser 20000
+(Validar con una aserción que el valor calculado coincida exactamente con 20000)
+
+Caso 2: Filtro de salarios mayores al valor límite
+Entrada: Valor filtro = 18000
+Resultado: La lista filtrada debe contener a Luis (22000) y Carlos (25000)
+(Verificar mediante aserción que el tamaño sea 2 y que los empleados coincidan)
+
+Caso 3: Ordenamiento descendente
+Entrada: Lista original de salarios = 15000, 22000, 18000, 25000
+Resultado: Orden esperado = Carlos(25000), Luis(22000), María(18000), Ana(15000)
+(Validar con aserción que el primer elemento sea Carlos y el último Ana)
+
+Caso 4: Lista vacía
+Entrada: Lista sin empleados
+Resultado: Promedio debe ser 0.0 y listas filtradas/ordenadas deben quedar vacías
+(Verificar mediante aserciones que no haya errores y los tamaños sean 0)
+
+Caso 5: Valores límite
+Entrada: Empleado con salario igual al valor de filtro (18000)
+Resultado: No debe incluirse en la lista filtrada
+(Validar que únicamente salarios > 18000 sean aceptados)

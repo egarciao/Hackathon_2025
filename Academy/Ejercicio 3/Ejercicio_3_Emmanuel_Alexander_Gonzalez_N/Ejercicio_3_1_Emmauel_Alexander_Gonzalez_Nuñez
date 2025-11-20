@@ -1,0 +1,43 @@
+Test Cases 3.1
+Caso 1: Flujo Normal (Varios clientes con saldos distintos) Datos de entrada: Lista de clientes:
+Juan: $1,500.00
+Maria: $5,000.00
+Pedro: $100.00
+Resultado esperado:
+Cliente con mayor saldo: Maria ($5,000.00).
+Cliente con mayor saldo: Maria ($5,000.00). Estado: Pass
+
+
+Caso 2:
+Lista Vacía (Sin clientes)
+Datos de entrada: Lista: [] (new ArrayList vacío).
+Resultado esperado:
+El sistema no debe fallar (no crash).
+Debe mostrar mensaje: "La lista está vacía".
+Mensaje en consola: "La lista está vacía." Estado: Pass
+
+Caso 3: Un Solo Cliente (Borde)
+Datos de entrada:
+Lista: [Ana: $300.00]
+Resultado esperado: Cliente con mayor saldo: Ana ($300.00).
+Cliente con mayor saldo: Ana ($300.00). Estado: Pass
+
+Caso 4: Empate de Saldos (Dos clientes con el mismo máximo) Datos de entrada:
+Carlos: $2,000.00
+Sofia: $2,000.00
+Resultado esperado:
+Debe devolver al primer cliente encontrado (Carlos) o manejar ambos.
+Según la lógica if (saldo > max), se queda con el primero.
+Cliente con mayor saldo: Carlos ($2,000.00). Estado: Pass
+
+Caso 5: Saldos Negativos (Cuentas con deuda) Datos de entrada:
+Luis: -500.00
+Elena: -100.00
+Resultado esperado: Matemáticamente, -100 es mayor que -500.
+Debe retornar a Elena.
+Cliente con mayor saldo: Elena (-100.00). Estado: Pass
+
+Caso 6: Lista con valor Nulo (Error)
+Datos de entrada: Lista: null (No inicializada).
+Resultado esperado: Manejo de excepción (NullPointerException) o validación previa.
+Respuesta: Crash del programa (NullPointerException en el for). Estado: False

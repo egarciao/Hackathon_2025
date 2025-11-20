@@ -1,0 +1,50 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import java.time.LocalDate;
+
+public class RegistroTest {
+
+    @Test
+    public void testAgregarDepositoValido() {
+        Registro registro = new Registro();
+        registro.agregarTransaccion("deposito", 1000.0, LocalDate.of(2025, 11, 1));
+        assertEquals(1000.0, registro.calcularTotalDepositos());
+        assertEquals(0.0, registro.calcularTotalRetiros());
+        assertEquals(1000.0, registro.obtenerSaldoActual());
+    }
+
+    @Test
+    public void testAgregarRetiroValido() {
+        Registro registro = new Registro();
+        registro.agregarTransaccion("deposito", 1000.0, LocalDate.of(2025, 11, 1));
+        registro.agregarTransaccion("retiro", 300.0, LocalDate.of(2025, 11, 2));
+        assertEquals(1000.0, registro.calcularTotalDepositos());
+        assertEquals(300.0, registro.calcularTotalRetiros());
+        assertEquals(700.0, registro.obtenerSaldoActual());
+    }
+
+    @Test
+    public void testRetiroExcedeSaldo() {
+        Registro registro = new Registro();
+        registro.agregarTransaccion("deposito", 500.0, LocalDate.of(2025, 11, 1));
+        registro.agregarTransaccion("retiro", 600.0, LocalDate.of(2025, 11, 2)); // debe ser rechazado
+        assertEquals(500.0, registro.calcularTotalDepositos());
+        assertEquals(0.0, registro.calcularTotalRetiros());
+        assertEquals(500.0, registro.obtenerSaldoActual());
+    }
+
+    @Test
+    public void testMontoNegativo() {
+        Registro registro = new Registro();
+        assertThrows(IllegalArgumentException.class, () -> {
+            registro.agregarTransaccion("deposito", -100.0, LocalDate.of(2025, 11, 1));
+        });
+    }
+
+    @Test
+    public void testTipoInvalido() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Transaccion("transferencia", 100.0, LocalDate.of(2025, 11, 1));
+        });
+    }
+}

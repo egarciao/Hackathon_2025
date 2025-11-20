@@ -1,0 +1,19 @@
+Casos válidos:
+
+• Número correcto de 10 dígitos: Al ingresar 1234567890, el sistema lo reconoció como válido.
+• Dígitos con ceros al inicio: La cuenta 0000012345 fue aceptada sin problemas.
+• Dígitos repetidos: La entrada 1111111111 se validó correctamente.
+• Todos ceros: La cuenta 0000000000 también fue aceptada como válida.
+
+Casos inválidos o sin validación:
+
+• Menos de 10 dígitos: Con 12345, el sistema lo detectó como inválido y pidió ingresar nuevamente.
+• Más de 10 dígitos: La entrada 1234567890123 fue rechazada por exceder el límite.
+• Letras dentro del número: Al ingresar 12A45678B0, el sistema lo consideró inválido.
+• Caracteres especiales: La entrada 12#45@7890 fue rechazada por contener símbolos no permitidos.
+• Campo vacío: Al no ingresar ningún carácter, se marcó como inválido.
+• Solo espacios: Una entrada compuesta únicamente de espacios fue rechazada.
+• Espacios intermedios: Con 1234 567 890, el sistema identificó la entrada como incorrecta.
+• Espacios al inicio o al final: Tanto " 1234567890" como "1234567890 " fueron tratados como inválidos.
+• Tabulaciones: Una entrada como "\t1234567890" también fue rechazada.
+• Valor nulo (null): El sistema detectó la entrada como inválida sin intentar procesarla.

@@ -1,0 +1,40 @@
+Listar clientes correctamente:
+El sistema cargó 3 clientes (Ana, Luis y María). Se mostraron correctamente en memoria y no hubo errores al recorrer la lista.
+
+• Cliente con mayor saldo identificado correctamente:
+Con los saldos 2500.50, 3200.75 y 1800.00, el sistema seleccionó como cliente con mayor saldo a Luis, con $3200.75.
+El resultado esperado y el resultado real coincidieron.
+
+• Valores normales en lista:
+Todos los datos de los clientes (id, nombre y saldo) se leyeron sin problemas y el módulo funcionó bajo condiciones normales.
+
+Casos de borde:
+
+• Lista con un solo cliente:
+Al contener solo un cliente, el sistema debe elegirlo automáticamente como el de mayor saldo. El comportamiento fue correcto.
+
+• Saldos iguales entre dos clientes:
+Cuando dos clientes tenían exactamente el mismo saldo, el sistema seleccionó el primero encontrado en la lista, lo cual coincide con el comportamiento esperado del algoritmo actual (mayor o igual no se usa, solo mayor).
+
+Casos inválidos o sin validación:
+
+• Lista vacía:
+Si clientes está vacía, el programa intenta acceder a clientes.get(0) y lanza una excepción IndexOutOfBoundsException.
+No existe manejo de errores para esta situación.
+Resultado esperado: Mostrar mensaje indicando que no hay clientes.
+Resultado real: Excepción y el programa se detiene.
+
+• Cliente con saldo negativo:
+Al ingresar un cliente con saldo negativo, el sistema lo acepta sin validación.
+Aunque funciona, es un dato inválido en contexto bancario.
+Resultado esperado: Rechazar o corregir.
+Resultado real: Aceptado y considerado en el cálculo.
+
+• Cliente con nombre vacío o nulo:
+No existe validación. El sistema permite nombres vacíos sin advertencia.
+El algoritmo funciona pero la integridad del dato es incorrecta.
+
+• Saldos extremadamente grandes:
+El sistema maneja correctamente cifras grandes, pero no existe validación de límites.
+Resultado esperado: Aceptar mientras no haya overflow.
+Resultado real: Funciona, sin pérdida de datos.

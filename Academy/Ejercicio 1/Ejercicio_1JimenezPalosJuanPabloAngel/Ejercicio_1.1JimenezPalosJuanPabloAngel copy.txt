@@ -1,0 +1,14 @@
+Casos válidos:
+• 	Datos normales: Con monto de 1000, tasa de 5% y 2 años, el cálculo fue correcto (interés 100, total 1100).
+• 	Monto inicial cero: Resultado correcto (interés y total en 0).
+• 	Tasa de interés cero: No se generó interés, total quedó en 1000.
+• 	Plazo cero: Sin tiempo, no se generó interés; total 1000.
+• 	Valores grandes: El programa manejó cifras enormes sin errores ni pérdida de precisión.
+Casos inválidos o sin validación:
+• 	Monto negativo: Se permitió -1000, generando resultados negativos sin advertencia.
+• 	Tasa negativa: Se aceptó -5%, lo que produjo pérdida de capital.
+• 	Plazo negativo: Se calculó como válido, aunque no tiene sentido financiero.
+• 	Texto en lugar de número: Al ingresar letras, el programa lanzó excepción como es esperado en Java.
+• 	Texto en campo de años: También generó excepción, pero no hay manejo de errores para evitarlo.
+
+
